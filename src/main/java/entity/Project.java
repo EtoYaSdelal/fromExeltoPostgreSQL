@@ -1,10 +1,20 @@
 package entity;
 
+import javax.persistence.*;
 import java.util.Objects;
+import java.util.Set;
 
+@javax.persistence.Entity
+@Table(name = "PROJECT")
 public class Project extends Entity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "TITLE")
     private String title;
+
+    @ManyToMany(mappedBy = "projects")
+    private Set<Employee> employees;
 
     public Project() {
     }
@@ -25,18 +35,12 @@ public class Project extends Entity {
         this.title = title;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Project project = (Project) o;
-        return Objects.equals(id, project.id) &&
-                Objects.equals(title, project.title);
+    public Set<Employee> getEmployees() {
+        return employees;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, title);
+    public void setEmployees(Set<Employee> employees) {
+        this.employees = employees;
     }
 
     @Override

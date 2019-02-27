@@ -1,12 +1,22 @@
 package entity;
 
+import javax.persistence.*;
 import java.util.Objects;
 
+@javax.persistence.Entity
+@Table(name = "ADDRESS")
 public class Address extends Entity{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "COUNTRY")
     private String country;
+    @Column(name = "CITY")
     private String city;
+    @Column(name = "STREET")
     private String street;
+    @Column(name = "POST_CODE")
     private String postCode;
 
     public Address() {

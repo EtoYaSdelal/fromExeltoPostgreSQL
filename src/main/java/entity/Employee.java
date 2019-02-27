@@ -1,14 +1,33 @@
 package entity;
 
+import javax.persistence.*;
 import java.sql.Date;
 import java.util.Objects;
+import java.util.Set;
 
-public class Employee extends Entity{
+@javax.persistence.Entity
+@Table(name = "EMPLOYEE")
+public class Employee extends Entity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "FIRST_NAME")
     private String firstName;
+    @Column(name = "LAST_NAME")
     private String lastName;
+    @Column(name = "BIRTHDAY")
     private Date birthday;
-    private Long addressId;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Address address;
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinTable(name = "EMPL_PROJ",
+            joinColumns = @JoinColumn(name = "EMPLOYEE_ID"),
+            inverseJoinColumns = @JoinColumn(name = "PROJECT_ID")
+    )
+    private Set<Project> projects;
+
 
     public Employee() {
     }
@@ -45,29 +64,20 @@ public class Employee extends Entity{
         this.birthday = birthday;
     }
 
-    public Long getAddressId() {
-        return addressId;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setAddressId(Long addressId) {
-        this.addressId = addressId;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
-        return Objects.equals(id, employee.id) &&
-                Objects.equals(firstName, employee.firstName) &&
-                Objects.equals(lastName, employee.lastName) &&
-                Objects.equals(birthday, employee.birthday) &&
-                Objects.equals(addressId, employee.addressId);
+    public Set<Project> getProjects() {
+        return projects;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, firstName, lastName, birthday, addressId);
+    public void setProjects(Set<Project> projects) {
+        this.projects = projects;
     }
 
     @Override
@@ -77,7 +87,7 @@ public class Employee extends Entity{
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", birthday=" + birthday +
-                ", addressId=" + addressId +
+                ", address=" + address +
                 '}';
     }
 }

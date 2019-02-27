@@ -5,14 +5,12 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Random;
 
 
 public class PlaceFiller {
@@ -33,7 +31,6 @@ public class PlaceFiller {
     private List<Address> addressList = new ArrayList<>();
     private List<Employee> employeeList = new ArrayList<>();
     private List<Project> projectList = new ArrayList<>();
-    private List<EmplProj> emplProjList = new ArrayList<>();
 
     public PlaceFiller() {
         try (FileInputStream fis = new FileInputStream("C:\\Users\\Fry\\Desktop\\some data\\Randmemployees.xls")) {
@@ -44,13 +41,8 @@ public class PlaceFiller {
             EntityBuilder entityBuilder = new EntityBuilder();
 
             for (int i = 1; i < rowNum; i++) {
-
-                Long rndAdId = new Random().nextLong();
-                if (rndAdId < 0L) {
-                    rndAdId = -1L * rndAdId;
-                }
-                addressList.add(entityBuilder.buildAddress(rndAdId
-                        , readBook.getSheetAt(0).getRow(i).getCell(0).toString()
+                addressList.add(entityBuilder.buildAddress(
+                        readBook.getSheetAt(0).getRow(i).getCell(0).toString()
                         , readBook.getSheetAt(0).getRow(i).getCell(1).toString()
                         , readBook.getSheetAt(0).getRow(i).getCell(2).toString()
                         , readBook.getSheetAt(0).getRow(i).getCell(3).toString()));
@@ -64,24 +56,15 @@ public class PlaceFiller {
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
-                Long rndEmpId = new Random().nextLong();
-                if (rndEmpId < 0L) {
-                    rndEmpId = -1L * rndEmpId;
-                }
-                employeeList.add(entityBuilder.buildEmployee(rndEmpId
-                        , readBook.getSheetAt(0).getRow(i).getCell(4).toString()
+
+                employeeList.add(entityBuilder.buildEmployee(
+                        readBook.getSheetAt(0).getRow(i).getCell(4).toString()
                         , readBook.getSheetAt(0).getRow(i).getCell(5).toString()
                         , sqlDate
-                        , addressList.get(i - 1).getId()));
+                        , addressList.get(i - 1)));
 
-                Long rndPrId = new Random().nextLong();
-                if (rndPrId < 0L) {
-                    rndPrId = -1L * rndPrId;
-                }
-                projectList.add(entityBuilder.buildProject(rndPrId
-                        , readBook.getSheetAt(0).getRow(i).getCell(7).toString()));
 
-                emplProjList.add(entityBuilder.buildEmplProj(employeeList.get(i - 1).getId(), projectList.get(i - 1).getId()));
+                projectList.add(entityBuilder.buildProject(readBook.getSheetAt(0).getRow(i).getCell(7).toString()));
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -100,7 +83,4 @@ public class PlaceFiller {
         return projectList;
     }
 
-    public List<EmplProj> getEmplProjList() {
-        return emplProjList;
-    }
 }

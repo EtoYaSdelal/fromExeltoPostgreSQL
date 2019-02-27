@@ -5,12 +5,16 @@
       <ServerVersion>11.1</ServerVersion>
     </root>
     <database id="2" parent="1" name="Employees">
-      <ObjectId>33780</ObjectId>
-      <StateNumber>3041</StateNumber>
+      <ObjectId>33881</ObjectId>
+      <StateNumber>3502</StateNumber>
       <Owner>postgres</Owner>
       <IntrospectionStateNumber>519</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
+      <Relations>sequence|table|35143|35145|1
+sequence|table|35159|35161|1
+sequence|table|35170|35172|1
+</Relations>
     </database>
     <database id="3" parent="1" name="companies">
       <ObjectId>25571</ObjectId>
@@ -126,8 +130,8 @@
       <Comment>standard public schema</Comment>
       <StateNumber>360</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionTimestamp>2019-02-24.00:18:59.955</IntrospectionTimestamp>
-      <IntrospectionStateNumber>3078</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2019-02-27.22:08:23.406</IntrospectionTimestamp>
+      <IntrospectionStateNumber>3943</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -187,188 +191,222 @@
       <SchemaName>pg_catalog</SchemaName>
       <SchemaId>11</SchemaId>
     </extension>
-    <table id="31" parent="23" name="address">
-      <ObjectId>33781</ObjectId>
+    <sequence id="31" parent="23" name="address_id_seq">
+      <ObjectId>35143</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3047</StateNumber>
-    </table>
-    <table id="32" parent="23" name="empl_proj">
-      <ObjectId>33838</ObjectId>
+      <StateNumber>3937</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="32" parent="23" name="employee_id_seq">
+      <ObjectId>35159</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3078</StateNumber>
-    </table>
-    <table id="33" parent="23" name="employee">
-      <ObjectId>33825</ObjectId>
+      <StateNumber>3939</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="33" parent="23" name="project_id_seq">
+      <ObjectId>35170</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3076</StateNumber>
-    </table>
-    <table id="34" parent="23" name="project">
-      <ObjectId>33789</ObjectId>
+      <StateNumber>3940</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="34" parent="23" name="address">
+      <ObjectId>35145</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>3048</StateNumber>
+      <StateNumber>3943</StateNumber>
     </table>
-    <column id="35" parent="31" name="id">
+    <table id="35" parent="23" name="empl_proj">
+      <ObjectId>35154</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3941</StateNumber>
+    </table>
+    <table id="36" parent="23" name="employee">
+      <ObjectId>35161</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3942</StateNumber>
+    </table>
+    <table id="37" parent="23" name="project">
+      <ObjectId>35172</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3941</StateNumber>
+    </table>
+    <column id="38" parent="34" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3042</StateNumber>
+      <StateNumber>3937</StateNumber>
+      <DefaultExpression>nextval(&apos;address_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="36" parent="31" name="country">
+    <column id="39" parent="34" name="city">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3042</StateNumber>
+      <StateNumber>3937</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="37" parent="31" name="city">
+    <column id="40" parent="34" name="country">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3042</StateNumber>
+      <StateNumber>3937</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="38" parent="31" name="street">
+    <column id="41" parent="34" name="post_code">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3042</StateNumber>
+      <StateNumber>3937</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="39" parent="31" name="post_code">
+    <column id="42" parent="34" name="street">
       <Position>5</Position>
-      <DataType>varchar(15)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3042</StateNumber>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>3937</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="40" parent="31" name="address_primary_key">
-      <ObjectId>33787</ObjectId>
-      <StateNumber>3042</StateNumber>
+    <index id="43" parent="34" name="address_pkey">
+      <ObjectId>35152</ObjectId>
+      <StateNumber>3937</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="41" parent="31" name="address_primary_key">
-      <ObjectId>33788</ObjectId>
-      <StateNumber>3042</StateNumber>
+    <key id="44" parent="34" name="address_pkey">
+      <ObjectId>35153</ObjectId>
+      <StateNumber>3937</StateNumber>
       <ColNames>id</ColNames>
-      <UnderlyingIndexName>address_primary_key</UnderlyingIndexName>
+      <UnderlyingIndexName>address_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="42" parent="32" name="employee_id">
+    <column id="45" parent="35" name="employee_id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3078</StateNumber>
+      <StateNumber>3938</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="43" parent="32" name="project_id">
+    <column id="46" parent="35" name="project_id">
       <Position>2</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3078</StateNumber>
+      <StateNumber>3938</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <foreign-key id="44" parent="32" name="empl_proj_employee_id_fkey">
-      <ObjectId>33841</ObjectId>
-      <StateNumber>3078</StateNumber>
+    <index id="47" parent="35" name="empl_proj_pkey">
+      <ObjectId>35157</ObjectId>
+      <StateNumber>3938</StateNumber>
+      <ColNames>employee_id
+project_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="48" parent="35" name="empl_proj_pkey">
+      <ObjectId>35158</ObjectId>
+      <StateNumber>3938</StateNumber>
+      <ColNames>employee_id
+project_id</ColNames>
+      <UnderlyingIndexName>empl_proj_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="49" parent="35" name="fkav7fscw3tnwn6d69xyjm8v87r">
+      <ObjectId>35183</ObjectId>
+      <StateNumber>3942</StateNumber>
       <ColNames>employee_id</ColNames>
-      <RefTableId>33825</RefTableId>
+      <RefTableId>35161</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>employee</RefTableName>
       <RefKeyName>employee_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="45" parent="32" name="empl_proj_project_id_fkey">
-      <ObjectId>33846</ObjectId>
-      <StateNumber>3078</StateNumber>
+    <foreign-key id="50" parent="35" name="fkf4n2q2crw04gao7chxtod454x">
+      <ObjectId>35178</ObjectId>
+      <StateNumber>3941</StateNumber>
       <ColNames>project_id</ColNames>
-      <RefTableId>33789</RefTableId>
+      <RefTableId>35172</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>project</RefTableName>
       <RefKeyName>project_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="46" parent="33" name="id">
+    <column id="51" parent="36" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3076</StateNumber>
+      <StateNumber>3939</StateNumber>
+      <DefaultExpression>nextval(&apos;employee_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="47" parent="33" name="first_name">
+    <column id="52" parent="36" name="birthday">
       <Position>2</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3076</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="48" parent="33" name="last_name">
-      <Position>3</Position>
-      <DataType>varchar(255)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3076</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="49" parent="33" name="birthday">
-      <Position>4</Position>
       <DataType>date|0s</DataType>
-      <StateNumber>3076</StateNumber>
+      <StateNumber>3939</StateNumber>
       <TypeId>1082</TypeId>
     </column>
-    <column id="50" parent="33" name="address_id">
+    <column id="53" parent="36" name="first_name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>3939</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="54" parent="36" name="last_name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>3939</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="55" parent="36" name="address_id">
       <Position>5</Position>
       <DataType>bigint|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3076</StateNumber>
+      <StateNumber>3939</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <index id="51" parent="33" name="employee_pkey">
-      <ObjectId>33831</ObjectId>
-      <StateNumber>3076</StateNumber>
+    <index id="56" parent="36" name="employee_pkey">
+      <ObjectId>35168</ObjectId>
+      <StateNumber>3939</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="52" parent="33" name="employee_pkey">
-      <ObjectId>33832</ObjectId>
-      <StateNumber>3076</StateNumber>
+    <key id="57" parent="36" name="employee_pkey">
+      <ObjectId>35169</ObjectId>
+      <StateNumber>3939</StateNumber>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>employee_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="53" parent="33" name="employee_fkey">
-      <ObjectId>33833</ObjectId>
-      <StateNumber>3076</StateNumber>
+    <foreign-key id="58" parent="36" name="fkl1e6165d2k04n8y71egbt8txu">
+      <ObjectId>35188</ObjectId>
+      <StateNumber>3943</StateNumber>
       <ColNames>address_id</ColNames>
-      <RefTableId>33781</RefTableId>
+      <RefTableId>35145</RefTableId>
       <RefColPositions>1</RefColPositions>
       <RefTableName>address</RefTableName>
-      <RefKeyName>address_primary_key</RefKeyName>
+      <RefKeyName>address_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="54" parent="34" name="id">
+    <column id="59" parent="37" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>3046</StateNumber>
+      <StateNumber>3940</StateNumber>
+      <DefaultExpression>nextval(&apos;project_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="55" parent="34" name="title">
+    <column id="60" parent="37" name="title">
       <Position>2</Position>
-      <DataType>varchar|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>3046</StateNumber>
+      <DataType>varchar(255)|0s</DataType>
+      <StateNumber>3940</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="56" parent="34" name="project_pkey">
-      <ObjectId>33795</ObjectId>
-      <StateNumber>3046</StateNumber>
+    <index id="61" parent="37" name="project_pkey">
+      <ObjectId>35176</ObjectId>
+      <StateNumber>3940</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="57" parent="34" name="project_pkey">
-      <ObjectId>33796</ObjectId>
-      <StateNumber>3046</StateNumber>
+    <key id="62" parent="37" name="project_pkey">
+      <ObjectId>35177</ObjectId>
+      <StateNumber>3940</StateNumber>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>project_pkey</UnderlyingIndexName>
       <Primary>1</Primary>
