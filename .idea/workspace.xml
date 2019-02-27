@@ -1,27 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c89b970-2404-4edb-afb2-547b171fb533" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9c8109da-b063-4c7e-87ff-d0065a9fd44d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9c8109da-b063-4c7e-87ff-d0065a9fd44d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9c8109da-b063-4c7e-87ff-d0065a9fd44d/storage_v2/_src_/database/Employees.ZQ-sFA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9c8109da-b063-4c7e-87ff-d0065a9fd44d/storage_v2/_src_/database/Employees.ZQ-sFA/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="1c89b970-2404-4edb-afb2-547b171fb533" name="Default Changelist" comment="add annotation mapping with a correct empl_proj table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JdbcPractice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JdbcPractice.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bizlogic/PlaceFiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bizlogic/PlaceFiller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/EntityBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bizlogic/EntityBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Domain.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bizlogic/PlaceFiller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bizlogic/PlaceFiller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Address.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/EntityBuilder.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Project.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/AddressService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/EmplProjService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/EmployeeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/ProjectService.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -90,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Domain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="265">
+              <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -205,7 +190,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-63" />
     <option name="y" value="3" />
     <option name="width" value="1378" />
@@ -247,23 +232,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bizlogic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JdbcPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JdbcPractice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JdbcPractice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JdbcPractice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JdbcPractice" type="b2602c69:ProjectViewProjectNode" />
@@ -284,7 +253,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551295868862" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551296114646" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../IDid" />
@@ -359,12 +328,20 @@
       <workItem from="1550754775139" duration="13869000" />
       <workItem from="1550926748292" duration="26916000" />
       <workItem from="1551175771205" duration="830000" />
-      <workItem from="1551284835312" duration="9343000" />
+      <workItem from="1551284835312" duration="9586000" />
     </task>
+    <task id="LOCAL-00001" summary="add annotation mapping with a correct empl_proj table">
+      <created>1551295954372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551295954372</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70936000" />
+    <option name="totallyTimeSpent" value="71179000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -394,7 +371,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32872504" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32872504" />
+      <window_info anchor="bottom" id="Messages" order="13" visible="true" weight="0.32872504" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -409,6 +386,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add annotation mapping with a correct empl_proj table" />
+    <option name="LAST_COMMIT_MESSAGE" value="add annotation mapping with a correct empl_proj table" />
   </component>
   <component name="editorHistoryManager">
     <entry file="das://9c8109da-b063-4c7e-87ff-d0065a9fd44d/database/Employees/schema/public/table/address">
@@ -790,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Domain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="265">
+          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
         </state>
       </provider>
     </entry>
