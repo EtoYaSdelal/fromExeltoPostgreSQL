@@ -1,11 +1,10 @@
 package entity;
 
 import javax.persistence.*;
-import java.util.Objects;
 
 @javax.persistence.Entity
 @Table(name = "ADDRESS")
-public class Address extends Entity{
+public class Address extends Entity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -60,23 +59,6 @@ public class Address extends Entity{
 
     public void setPostCode(String postCode) {
         this.postCode = postCode;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Address address = (Address) o;
-        return Objects.equals(id, address.id) &&
-                Objects.equals(country, address.country) &&
-                Objects.equals(city, address.city) &&
-                Objects.equals(street, address.street) &&
-                Objects.equals(postCode, address.postCode);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, country, city, street, postCode);
     }
 
     @Override

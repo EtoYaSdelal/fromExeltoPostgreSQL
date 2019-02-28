@@ -1,126 +1,61 @@
 package service;
 
-import bizlogic.Util;
+import bizlogic.SessionUtil;
 import dao.DAO;
 import entity.Project;
+import org.hibernate.Session;
+import org.hibernate.query.NativeQuery;
 
-import java.sql.*;
-import java.util.ArrayList;
+import java.sql.SQLException;
 import java.util.List;
 
-public class ProjectService extends Util implements DAO<Project> {
-    Connection connection = getConnection();
+public class ProjectService extends SessionUtil implements DAO<Project> {
 
     @Override
     public void add(Project project) throws SQLException {
-        if (connection.isClosed()) {
-            connection = getConnection("add");
-        }
-        try (PreparedStatement ps = connection.prepareStatement(
-                "INSERT INTO project (id, title)" +
-                        "VALUES ( ?,?)")) {
-            ps.setLong(1, project.getId());
-            ps.setString(2, project.getTitle());
-            ps.executeUpdate();
-        } finally {
-            if (connection != null) {
-                connection.close();
-            }
-        }
-
+        openTransactionSession();
+        Session session = getSession();
+        session.save(project);
+        closeTransactionSession();
     }
 
     @Override
     public List<Project> getAll() throws SQLException {
-        if (connection.isClosed()) {
-            connection = getConnection("get all");
-        }
-        List<Project> projects = new ArrayList<>();
-        try (Statement st = connection.createStatement()) {
-            ResultSet rs = null;
-            try {
-                rs = st.executeQuery("SELECT * FROM project");
-                while (rs.next()) {
-                    projects.add(createProject(rs));
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } finally {
-                if (rs != null) {
-                    rs.close();
-                }
-                if (connection != null) {
-                    connection.close();
-                }
-            }
-        }
-        return projects;
-    }
+        openTransactionSession();
+        Session session = getSession();
 
+        String sql = "SELECT * FROM Project";
+        NativeQuery<Project> query = session.createNativeQuery(sql).addEntity(Project.class);
+        List<Project> projectList = query.getResultList();
+
+        closeTransactionSession();
+        return projectList;
+    }
 
     @Override
     public Project getById(Long id) throws SQLException {
-        if (connection.isClosed()) {
-            connection = getConnection("get by id");
-        }
-        Project project = new Project();
-        try (PreparedStatement ps = connection.prepareStatement("SELECT * FROM project WHERE id = ?")) {
-            ps.setLong(1, id);
-            ResultSet rs = null;
-            try {
-                rs = ps.executeQuery();
-                while (rs.next()) {
-                    project = createProject(rs);
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } finally {
-                if (rs != null) {
-                    rs.close();
-                }
-                if (connection != null) {
-                    connection.close();
-                }
-            }
-        }
+        openTransactionSession();
+        Session session = getSession();
+        Project project = session.get(Project.class, id);
+        closeTransactionSession();
         return project;
     }
 
     @Override
     public void update(Project project, Long id) throws SQLException {
-        if (connection.isClosed()) {
-            connection = getConnection("update");
-        }
-        try (PreparedStatement ps = connection.prepareStatement("UPDATE project SET title=? where id=?")) {
-            ps.setString(1, project.getTitle());
-            ps.setLong(2, id);
-            ps.executeUpdate();
-        } finally {
-            if (connection != null) {
-                connection.close();
-            }
-        }
+        openTransactionSession();
+        Session session = getSession();
+        Project old = session.get(Project.class, id);
+        old.setTitle(project.getTitle());
+        session.save(old);
+        closeTransactionSession();
     }
 
     @Override
-    public void delete(Project project) throws SQLException {
-        if (connection.isClosed()) {
-            connection = getConnection("delete");
-        }
-        try (PreparedStatement ps = connection.prepareStatement("DELETE from progect WHERE id=?")) {
-            ps.setLong(1, project.getId());
-            ps.executeUpdate();
-        } finally {
-            if (connection != null) {
-                connection.close();
-            }
-        }
-    }
-
-    private Project createProject(ResultSet rs) throws SQLException {
-        Project project = new Project();
-        project.setId(rs.getLong(1));
-        project.setTitle(rs.getString(2));
-        return project;
+    public void delete(Long id) throws SQLException {
+        openTransactionSession();
+        Session session = getSession();
+        session.remove(session.get(Project.class, id));
+        closeTransactionSession();
     }
 }

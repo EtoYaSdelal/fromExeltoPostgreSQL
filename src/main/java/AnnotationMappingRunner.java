@@ -1,3 +1,4 @@
+/*
 import bizlogic.HibernateUtil;
 import bizlogic.PlaceFiller;
 import entity.Address;
@@ -5,7 +6,6 @@ import entity.Employee;
 import entity.Project;
 import org.hibernate.Session;
 
-import java.sql.Date;
 import java.util.*;
 
 public class AnnotationMappingRunner {
@@ -20,9 +20,9 @@ public class AnnotationMappingRunner {
         projectList.forEach(x -> x.setEmployees(employees2));
 
         Set<Project> projects2 = new LinkedHashSet<>(projectList);
-        employeeList.forEach(x->x.setProjects(projects2));
+        employeeList.forEach(x -> x.setProjects(projects2));
 
-        Session session = HibernateUtil.getSs().openSession();
+        Session session = HibernateUtil.getSession().openSession();
         session.beginTransaction();
 
 //        Address address = new Address();
@@ -54,7 +54,7 @@ public class AnnotationMappingRunner {
 //        session.save(address);
 //        session.save(employee);
 //        session.save(project);
-        for(int i=0;i<addressList.size();i++){
+        for (int i = 0; i < addressList.size(); i++) {
             session.save(addressList.get(i));
             session.save(employeeList.get(i));
             session.save(projectList.get(i));
@@ -64,3 +64,4 @@ public class AnnotationMappingRunner {
         HibernateUtil.shutdown();
     }
 }
+*/

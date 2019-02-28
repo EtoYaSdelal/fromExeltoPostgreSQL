@@ -1,8 +1,11 @@
 package bizlogic;
 
-import entity.*;
+import entity.Address;
+import entity.Employee;
+import entity.Project;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -36,7 +39,7 @@ public class PlaceFiller {
         try (FileInputStream fis = new FileInputStream("C:\\Users\\Fry\\Desktop\\some data\\Randmemployees.xls")) {
             Workbook readBook = new HSSFWorkbook(fis);
             Sheet sheet = readBook.getSheetAt(0);
-            int rowNum = sheet.getPhysicalNumberOfRows();
+            int rowNum = sheet.getPhysicalNumberOfRows() - 90;
 
             EntityBuilder entityBuilder = new EntityBuilder();
 

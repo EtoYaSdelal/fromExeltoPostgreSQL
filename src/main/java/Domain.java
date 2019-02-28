@@ -1,52 +1,59 @@
-//import bizlogic.PlaceFiller;
-//import bizlogic.Util;
-//import entity.Address;
-//import entity.EmplProj;
-//import entity.Employee;
-//import entity.Project;
-//import service.AddressService;
-//import service.EmplProjService;
-//import service.EmployeeService;
-//import service.ProjectService;
+import bizlogic.SessionUtil;
+import entity.Address;
+import entity.Employee;
+import entity.Project;
+import org.hibernate.Session;
+import service.AddressService;
+import service.EmployeeService;
+import service.ProjectService;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public class Domain {
+    public static void main(String[] args) throws SQLException {
+        SessionUtil sessionUtil = new SessionUtil();
+        sessionUtil.openTransactionSession();
+        Session session = sessionUtil.getSession();
+
+//        PlaceFiller pf = new PlaceFiller();
+//        List<Address> addressList = pf.getAddressList();
+//        List<Employee> employeeList = pf.getEmployeeList();
+//        List<Project> projectList = pf.getProjectList();
 //
-//import java.sql.*;
-//import java.util.ArrayList;
-//import java.util.List;
+//        Set<Employee> employees2 = new LinkedHashSet<>(employeeList);
+//        projectList.forEach(x -> x.setEmployees(employees2));
 //
-//public class Domain {
-//    public static void main(String[] args) throws SQLException {
-//        PlaceFiller placeFiller = new PlaceFiller();
+//        Set<Project> projects2 = new LinkedHashSet<>(projectList);
+//        employeeList.forEach(x -> x.setProjects(projects2));
 //
-//        AddressService adSer = new AddressService();
-//        EmployeeService empSer = new EmployeeService();
-//        ProjectService projSer = new ProjectService();
-//        EmplProjService empPrSer = new EmplProjService();
-//
-////        List<Address> addressList = adSer.getAll();
-////        for (Address a : addressList) {
-////            System.out.println(a);
-////        }
-////
-////        List<Employee> employeeList = empSer.getAll();
-////        for (Employee e : employeeList) {
-////            System.out.println(e);
-////        }
-////
-////        List<Project> projectList = projSer.getAll();
-////        for (Project p : projectList) {
-////            System.out.println(p);
-////        }
-////
-////        List<EmplProj> emplProjList = empPrSer.getAll();
-////        for (EmplProj ep: emplProjList){
-////            System.out.println(ep);
-////        }
-//
-////        for (int i = 0; i < placeFiller.getAddressList().size(); i++) {
-////            adSer.add(placeFiller.getAddressList().get(i));
-////            empSer.add(placeFiller.getEmployeeList().get(i));
-////            projSer.add(placeFiller.getProjectList().get(i));
-////            empPrSer.add(placeFiller.getEmplProjList().get(i));
-////        }
-//    }
-//}
+//        for (int i = 0; i < addressList.size(); i++) {
+//            addressService.add(addressList.get(i));
+//            session.save(employeeList.get(i));
+//            session.save(projectList.get(i));
+//        }
+
+        Address newAddress = new Address();
+        newAddress.setCountry("rrr");
+        newAddress.setCity("fff");
+        newAddress.setStreet("ggg");
+        newAddress.setPostCode("555");
+
+        AddressService addressService = new AddressService();
+        List<Address> showAddresses = addressService.getAll();
+        showAddresses.forEach(System.out::println);
+
+        EmployeeService employeeService = new EmployeeService();
+        List<Employee> showEmployees = employeeService.getAll();
+        showEmployees.forEach(System.out::println);
+
+        ProjectService projectService = new ProjectService();
+        List<Project> projectList = projectService.getAll();
+        projectList.forEach(System.out::println);
+
+
+        sessionUtil.closeTransactionSession();
+
+
+    }
+}

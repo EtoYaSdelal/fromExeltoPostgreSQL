@@ -2,7 +2,6 @@ package entity;
 
 import javax.persistence.*;
 import java.sql.Date;
-import java.util.Objects;
 import java.util.Set;
 
 @javax.persistence.Entity
@@ -19,6 +18,7 @@ public class Employee extends Entity {
     @Column(name = "BIRTHDAY")
     private Date birthday;
     @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "WOW_ITS_ADDRESS_ID")
     private Address address;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

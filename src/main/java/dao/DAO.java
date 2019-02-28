@@ -1,10 +1,8 @@
 package dao;
 
-import entity.Address;
 import entity.Entity;
 
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public interface DAO <T extends Entity> {
@@ -21,7 +19,7 @@ public interface DAO <T extends Entity> {
     void update(T t, Long id) throws SQLException;
 
     //delete
-    void delete(T t) throws SQLException;
+    void delete(Long id) throws SQLException;
 
 
 }

@@ -1,13 +1,13 @@
 package bizlogic;
 
 import entity.Address;
-import entity.EmplProj;
 import entity.Employee;
 import entity.Project;
 
 import java.sql.Date;
 
 public class EntityBuilder {
+
     public Address buildAddress(String c, String ci, String s, String pc) {
         Address address = new Address();
         address.setCountry(c);
