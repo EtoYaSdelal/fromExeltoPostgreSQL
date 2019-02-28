@@ -18,7 +18,7 @@ public class Employee extends Entity {
     @Column(name = "BIRTHDAY")
     private Date birthday;
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "WOW_ITS_ADDRESS_ID")
+    @JoinColumn(name = "WOW_ID")
     private Address address;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

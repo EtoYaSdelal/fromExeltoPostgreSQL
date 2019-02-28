@@ -55,7 +55,9 @@ public class ProjectService extends SessionUtil implements DAO<Project> {
     public void delete(Long id) throws SQLException {
         openTransactionSession();
         Session session = getSession();
-        session.remove(session.get(Project.class, id));
+        Project project =session.get(Project.class, id);
+       // project.setEmployees(null);
+        session.remove(project);
         closeTransactionSession();
     }
 }

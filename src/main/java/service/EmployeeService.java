@@ -3,6 +3,7 @@ package service;
 import bizlogic.SessionUtil;
 import dao.DAO;
 import entity.Employee;
+import entity.Project;
 import org.hibernate.Session;
 import org.hibernate.query.NativeQuery;
 
@@ -59,7 +60,16 @@ public class EmployeeService extends SessionUtil implements DAO<Employee> {
     public void delete(Long id) throws SQLException {
         openTransactionSession();
         Session session = getSession();
-        session.remove(session.get(Employee.class, id));
+        Employee employee = session.get(Employee.class, id);
+        for(Project p : employee.getProjects()){
+            p.getEmployees().remove(employee);
+            for(Employee e : p.getEmployees()){
+                e.getProjects().remove(p);
+            }
+        }
+
+
+        session.remove(employee);
         closeTransactionSession();
     }
 }

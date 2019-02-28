@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c89b970-2404-4edb-afb2-547b171fb533" name="Default Changelist" comment="add annotation mapping with a correct empl_proj table">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bizlogic/SessionUtil.java" afterDir="false" />
+    <list default="true" id="1c89b970-2404-4edb-afb2-547b171fb533" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9c8109da-b063-4c7e-87ff-d0065a9fd44d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9c8109da-b063-4c7e-87ff-d0065a9fd44d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9c8109da-b063-4c7e-87ff-d0065a9fd44d/storage_v2/_src_/database/Employees.ZQ-sFA/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9c8109da-b063-4c7e-87ff-d0065a9fd44d/storage_v2/_src_/database/Employees.ZQ-sFA/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AnnotationMappingRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AnnotationMappingRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Domain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bizlogic/EntityBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bizlogic/EntityBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bizlogic/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bizlogic/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bizlogic/PlaceFiller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bizlogic/PlaceFiller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/EmplProj.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/EmplProjService.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/AnnotationMappingRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bizlogic/EntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bizlogic/EntityBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bizlogic/HibernateUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bizlogic/HibernateUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/bizlogic/PlaceFiller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bizlogic/PlaceFiller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dao/DAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/entity/EmplProj.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/entity/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/entity/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -93,11 +77,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/AddressService.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Domain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+            <state relative-caret-position="365">
+              <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/service/EmployeeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Project.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#720#721#0" expanded="true" />
+                <element signature="e#752#753#0" expanded="true" />
+                <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#851#852#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/entity/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,22 +164,22 @@
         <option value="$PROJECT_DIR$/src/main/java/entity/AbstractAddressBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/AddressBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/bizlogic/XLSTestRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Project.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/EntityBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/entity/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/bizlogic/EntityBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/bizlogic/HibernateUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/entity/Address.java" />
         <option value="$PROJECT_DIR$/src/main/java/bizlogic/SessionUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/bizlogic/PlaceFiller.java" />
         <option value="$PROJECT_DIR$/src/main/java/AnnotationMappingRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/AddressService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/EmployeeService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/ProjectService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Domain.java" />
         <option value="$PROJECT_DIR$/src/main/java/bizlogic/Fur.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/service/ProjectService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Project.java" />
+        <option value="$PROJECT_DIR$/src/main/java/entity/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/EmployeeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Domain.java" />
       </list>
     </option>
   </component>
@@ -262,7 +286,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551370064380" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551383585264" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../IDid" />
@@ -286,7 +310,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Fur">
+  <component name="RunManager" selected="Application.Domain">
     <configuration name="AnnotationMappingRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AnnotationMappingRunner" />
       <module name="JdbcPractice" />
@@ -329,8 +353,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Fur" />
         <item itemvalue="Application.Domain" />
+        <item itemvalue="Application.Fur" />
         <item itemvalue="Application.AnnotationMappingRunner" />
         <item itemvalue="Application.PlaceFiller" />
         <item itemvalue="Application.AnnotationMappingRunner" />
@@ -361,11 +385,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551295954372</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add service layer for entities">
+      <created>1551370197271</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551370197271</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87581000" />
+    <option name="totallyTimeSpent" value="94587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -379,7 +410,7 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info id="Run" order="8" type="SLIDING" weight="0.2912254" />
+      <window_info id="Run" order="8" type="SLIDING" weight="0.8396369" />
       <window_info id="Persistence" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.32872504" />
       <window_info anchor="bottom" id="Message" order="1" />
@@ -413,44 +444,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add annotation mapping with a correct empl_proj table" />
-    <option name="LAST_COMMIT_MESSAGE" value="add annotation mapping with a correct empl_proj table" />
+    <MESSAGE value="add service layer for entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="add service layer for entities" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/bizlogic/EntityBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bizlogic/Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#752#753#0" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -465,23 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9c8109da-b063-4c7e-87ff-d0065a9fd44d/database/Employees/schema/public/table/empl_proj">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-          <column-attributes>
-            <column name="ctid" enabled="false" />
-          </column-attributes>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9c8109da-b063-4c7e-87ff-d0065a9fd44d/database/Employees/schema/public/table/project">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -504,16 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/bizlogic/HibernateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bizlogic/SessionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -532,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" lean-forward="true" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/EntityManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
@@ -553,34 +521,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://9c8109da-b063-4c7e-87ff-d0065a9fd44d/database/Employees/schema/public/table/address">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/DAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://9c8109da-b063-4c7e-87ff-d0065a9fd44d/database/Employees/schema/public/table/employee">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,33 +546,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Domain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/ProjectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/EmployeeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bizlogic/Fur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -640,10 +557,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bizlogic/EntityBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/AddressService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
-          <caret line="62" column="33" lean-forward="true" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <caret line="60" column="33" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/bizlogic/HibernateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2-sources.jar!/javax/persistence/CascadeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/ProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9c8109da-b063-4c7e-87ff-d0065a9fd44d/database/Employees/schema/public/table/project">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9c8109da-b063-4c7e-87ff-d0065a9fd44d/database/Employees/schema/public/table/empl_proj">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9c8109da-b063-4c7e-87ff-d0065a9fd44d/database/Employees/schema/public/table/address">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://9c8109da-b063-4c7e-87ff-d0065a9fd44d/database/Employees/schema/public/table/employee">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Domain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="39" column="51" lean-forward="true" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/entity/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#752#753#0" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#851#852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/EmployeeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
