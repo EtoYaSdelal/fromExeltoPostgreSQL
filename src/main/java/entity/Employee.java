@@ -11,13 +11,17 @@ public class Employee extends Entity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(name = "FIRST_NAME")
     private String firstName;
+
     @Column(name = "LAST_NAME")
     private String lastName;
+
     @Column(name = "BIRTHDAY")
     private Date birthday;
-    @OneToOne(cascade = CascadeType.ALL)
+
+    @OneToOne(cascade = CascadeType.ALL )
     @JoinColumn(name = "WOW_ID")
     private Address address;
 

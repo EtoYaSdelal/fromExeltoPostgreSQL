@@ -17,7 +17,7 @@ public class Domain {
         sessionUtil.openTransactionSession();
         Session session = sessionUtil.getSession();
 
-        PlaceFiller pf = new PlaceFiller();
+        PlaceFiller pf = new PlaceFiller(10);
         List<Address> addressList = pf.getAddressList();
         List<Employee> employeeList = pf.getEmployeeList();
         List<Project> projectList = pf.getProjectList();
@@ -31,12 +31,12 @@ public class Domain {
         AddressService addressService = new AddressService();
 //        List<Address> showAddresses = addressService.getAll();
 //        showAddresses.forEach(System.out::println);
-
+//
 //        EmployeeService employeeService = new EmployeeService();
-//        employeeService.delete(21L);
+//        employeeService.delete(1L);
 //        List<Employee> showEmployees = employeeService.getAll();
 //        showEmployees.forEach(System.out::println);
-
+//
 //        ProjectService projectService = new ProjectService();
 //        projectService.delete(1L);
 //        List<Project> projectList = projectService.getAll();

@@ -35,12 +35,12 @@ public class PlaceFiller {
     private List<Employee> employeeList = new ArrayList<>();
     private List<Project> projectList = new ArrayList<>();
 
-    public PlaceFiller() {
+    public PlaceFiller(int amountOfRow) {
         try (FileInputStream fis = new FileInputStream("C:\\Users\\Fry\\Desktop\\some data\\Randmemployees.xls")) {
             Workbook readBook = new HSSFWorkbook(fis);
             Sheet sheet = readBook.getSheetAt(0);
-            int rowNum = sheet.getPhysicalNumberOfRows() - 90;
-
+            //   int rowNum = sheet.getPhysicalNumberOfRows() - 90;
+            int rowNum = amountOfRow;
             EntityBuilder entityBuilder = new EntityBuilder();
 
             for (int i = 1; i < rowNum; i++) {
